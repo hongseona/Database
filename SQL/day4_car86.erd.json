@@ -1,0 +1,826 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": 487,
+    "database": 4,
+    "databaseName": "트럭렌탈",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "tNB_vc3U_QSj1KpO9p9rx",
+      "tvCllNL1N9Yl05jj1ojlU",
+      "oA_nVfWSK2eDHMb2Hj_sv",
+      "ugNFPhtTpmRSnHKlZyX45"
+    ],
+    "relationshipIds": [
+      "kIlIapyXnWuleo24veFwZ",
+      "3ocfoNZkEyRvnKq1GHZTo",
+      "jCcO8sb6MZOk0dp7LT14l",
+      "x4BCGh8z78Lsr_6Tnh0pV"
+    ],
+    "indexIds": [
+      "N2BlrdJBNjTPtrM4-epw3"
+    ],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "tNB_vc3U_QSj1KpO9p9rx": {
+        "id": "tNB_vc3U_QSj1KpO9p9rx",
+        "name": "tbl_office",
+        "comment": "사무소",
+        "columnIds": [
+          "hpFTXvOUnlSqcwWx7la_P",
+          "a2kiAeKm_zm_EZ-wWVELy",
+          "RVzf5hhDv0eK_lldQXt2A"
+        ],
+        "seqColumnIds": [
+          "hpFTXvOUnlSqcwWx7la_P",
+          "a2kiAeKm_zm_EZ-wWVELy",
+          "RVzf5hhDv0eK_lldQXt2A"
+        ],
+        "ui": {
+          "x": 34,
+          "y": 16,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1754013560552,
+          "createAt": 1754012119673
+        }
+      },
+      "tvCllNL1N9Yl05jj1ojlU": {
+        "id": "tvCllNL1N9Yl05jj1ojlU",
+        "name": "tbl_truck",
+        "comment": "차량",
+        "columnIds": [
+          "4E7uWkemdCLewz_SnXkMb",
+          "bquUaTO0vHLj0iTnucqA0",
+          "Jqu2FSLJMdqEhUpjPu46h",
+          "2FNXe0Lz3ad9CPuUQfEzS"
+        ],
+        "seqColumnIds": [
+          "4E7uWkemdCLewz_SnXkMb",
+          "bquUaTO0vHLj0iTnucqA0",
+          "Jqu2FSLJMdqEhUpjPu46h",
+          "2FNXe0Lz3ad9CPuUQfEzS"
+        ],
+        "ui": {
+          "x": 28,
+          "y": 157,
+          "zIndex": 56,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1754013416546,
+          "createAt": 1754012511861
+        }
+      },
+      "oA_nVfWSK2eDHMb2Hj_sv": {
+        "id": "oA_nVfWSK2eDHMb2Hj_sv",
+        "name": "tbl_customer",
+        "comment": "고객",
+        "columnIds": [
+          "RHx9zbBOQq6oqgZ5EuKp6",
+          "QvEuoRa0InhZ_84fj9K3y",
+          "KflbDJ3KW3RHEC0pp1Lkj",
+          "MzcyJWTEzgIzRI19nQdYV"
+        ],
+        "seqColumnIds": [
+          "RHx9zbBOQq6oqgZ5EuKp6",
+          "QvEuoRa0InhZ_84fj9K3y",
+          "KflbDJ3KW3RHEC0pp1Lkj",
+          "w_p16mGX97VyMyyFSp69P",
+          "MzcyJWTEzgIzRI19nQdYV",
+          "cYxQAOGdM2ZWB2pieM9SH",
+          "uBdDHnnHUcQsEhI3S8Pme"
+        ],
+        "ui": {
+          "x": 26,
+          "y": 314,
+          "zIndex": 82,
+          "widthName": 70,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1754021406047,
+          "createAt": 1754012786573
+        }
+      },
+      "ugNFPhtTpmRSnHKlZyX45": {
+        "id": "ugNFPhtTpmRSnHKlZyX45",
+        "name": "tbl_contract",
+        "comment": "계약",
+        "columnIds": [
+          "L-H9eufmhQZunlvHPpkrP",
+          "IFbRa0siAPVhI9pYFSTVO",
+          "YPbAqb_OIU4u9PirCw7BP",
+          "slfIKO0Ds6pFFjwngtbrA",
+          "b8e0I15ceGzZHzb2CAqmZ",
+          "TbGLUeMVQIn5buOoMKDKV",
+          "bNfzCliNs5BvPhLY9UP41"
+        ],
+        "seqColumnIds": [
+          "L-H9eufmhQZunlvHPpkrP",
+          "rsyh3fzqbTv4OMxW1MPgM",
+          "IFbRa0siAPVhI9pYFSTVO",
+          "YPbAqb_OIU4u9PirCw7BP",
+          "slfIKO0Ds6pFFjwngtbrA",
+          "HPRlVrdTDEpP3RGefbBEZ",
+          "b8e0I15ceGzZHzb2CAqmZ",
+          "TbGLUeMVQIn5buOoMKDKV",
+          "bNfzCliNs5BvPhLY9UP41"
+        ],
+        "ui": {
+          "x": 583,
+          "y": 209,
+          "zIndex": 97,
+          "widthName": 64,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1754021424091,
+          "createAt": 1754013411094
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "hpFTXvOUnlSqcwWx7la_P": {
+        "id": "hpFTXvOUnlSqcwWx7la_P",
+        "tableId": "tNB_vc3U_QSj1KpO9p9rx",
+        "name": "off_no",
+        "comment": "사무소번호",
+        "dataType": "CHAR(3)",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 62,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754012459468,
+          "createAt": 1754012129068
+        }
+      },
+      "a2kiAeKm_zm_EZ-wWVELy": {
+        "id": "a2kiAeKm_zm_EZ-wWVELy",
+        "tableId": "tNB_vc3U_QSj1KpO9p9rx",
+        "name": "address",
+        "comment": "사무소주소",
+        "dataType": "VARCHAR2(200)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 62,
+          "widthDataType": 87,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754012467570,
+          "createAt": 1754012227556
+        }
+      },
+      "RVzf5hhDv0eK_lldQXt2A": {
+        "id": "RVzf5hhDv0eK_lldQXt2A",
+        "tableId": "tNB_vc3U_QSj1KpO9p9rx",
+        "name": "tel",
+        "comment": "사무소 전화번호",
+        "dataType": "VARCHAR2(20)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 89,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754012614418,
+          "createAt": 1754012308332
+        }
+      },
+      "4E7uWkemdCLewz_SnXkMb": {
+        "id": "4E7uWkemdCLewz_SnXkMb",
+        "tableId": "tvCllNL1N9Yl05jj1ojlU",
+        "name": "t_no",
+        "comment": "차량번호",
+        "dataType": "VARCHAR2(20)",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754012763989,
+          "createAt": 1754012539860
+        }
+      },
+      "bquUaTO0vHLj0iTnucqA0": {
+        "id": "bquUaTO0vHLj0iTnucqA0",
+        "tableId": "tvCllNL1N9Yl05jj1ojlU",
+        "name": "t_size",
+        "comment": " 차량유형",
+        "dataType": "VARCHAR2(20)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754012658596,
+          "createAt": 1754012623940
+        }
+      },
+      "Jqu2FSLJMdqEhUpjPu46h": {
+        "id": "Jqu2FSLJMdqEhUpjPu46h",
+        "tableId": "tvCllNL1N9Yl05jj1ojlU",
+        "name": "t_lastMdate",
+        "comment": "마지막정비일",
+        "dataType": "DATE",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 64,
+          "widthComment": 74,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754012727297,
+          "createAt": 1754012668276
+        }
+      },
+      "2FNXe0Lz3ad9CPuUQfEzS": {
+        "id": "2FNXe0Lz3ad9CPuUQfEzS",
+        "tableId": "tvCllNL1N9Yl05jj1ojlU",
+        "name": "t_outdate",
+        "comment": "등록말소일",
+        "dataType": "DATE",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 62,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754012759599,
+          "createAt": 1754012733111
+        }
+      },
+      "RHx9zbBOQq6oqgZ5EuKp6": {
+        "id": "RHx9zbBOQq6oqgZ5EuKp6",
+        "tableId": "oA_nVfWSK2eDHMb2Hj_sv",
+        "name": "cust_no",
+        "comment": "고객번호",
+        "dataType": "NUMBER",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013908822,
+          "createAt": 1754012824118
+        }
+      },
+      "QvEuoRa0InhZ_84fj9K3y": {
+        "id": "QvEuoRa0InhZ_84fj9K3y",
+        "tableId": "oA_nVfWSK2eDHMb2Hj_sv",
+        "name": "cust_ident",
+        "comment": "HP/사업자번호",
+        "dataType": "VARCHAR2(20)",
+        "default": "",
+        "options": 12,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 82,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013286869,
+          "createAt": 1754012955436
+        }
+      },
+      "KflbDJ3KW3RHEC0pp1Lkj": {
+        "id": "KflbDJ3KW3RHEC0pp1Lkj",
+        "tableId": "oA_nVfWSK2eDHMb2Hj_sv",
+        "name": "cust_type",
+        "comment": "개인/법인",
+        "dataType": "VARCHAR2(20)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013024326,
+          "createAt": 1754012990111
+        }
+      },
+      "w_p16mGX97VyMyyFSp69P": {
+        "id": "w_p16mGX97VyMyyFSp69P",
+        "tableId": "oA_nVfWSK2eDHMb2Hj_sv",
+        "name": "cust_tel",
+        "comment": "연락처",
+        "dataType": "VARCHAR2(20)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013048454,
+          "createAt": 1754013025519
+        }
+      },
+      "MzcyJWTEzgIzRI19nQdYV": {
+        "id": "MzcyJWTEzgIzRI19nQdYV",
+        "tableId": "oA_nVfWSK2eDHMb2Hj_sv",
+        "name": "cust_addr",
+        "comment": "주소",
+        "dataType": "VARCHAR2(100)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 87,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013116133,
+          "createAt": 1754013049604
+        }
+      },
+      "cYxQAOGdM2ZWB2pieM9SH": {
+        "id": "cYxQAOGdM2ZWB2pieM9SH",
+        "tableId": "oA_nVfWSK2eDHMb2Hj_sv",
+        "name": "",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013231989,
+          "createAt": 1754013231989
+        }
+      },
+      "L-H9eufmhQZunlvHPpkrP": {
+        "id": "L-H9eufmhQZunlvHPpkrP",
+        "tableId": "ugNFPhtTpmRSnHKlZyX45",
+        "name": "cont_no",
+        "comment": "계약번호",
+        "dataType": "NUMBER",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013590237,
+          "createAt": 1754013440957
+        }
+      },
+      "rsyh3fzqbTv4OMxW1MPgM": {
+        "id": "rsyh3fzqbTv4OMxW1MPgM",
+        "tableId": "ugNFPhtTpmRSnHKlZyX45",
+        "name": "",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013545277,
+          "createAt": 1754013545277
+        }
+      },
+      "IFbRa0siAPVhI9pYFSTVO": {
+        "id": "IFbRa0siAPVhI9pYFSTVO",
+        "tableId": "ugNFPhtTpmRSnHKlZyX45",
+        "name": "rentoff_no",
+        "comment": "시작사무소번호",
+        "dataType": "CHAR(3)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 86,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013617923,
+          "createAt": 1754013563451
+        }
+      },
+      "YPbAqb_OIU4u9PirCw7BP": {
+        "id": "YPbAqb_OIU4u9PirCw7BP",
+        "tableId": "ugNFPhtTpmRSnHKlZyX45",
+        "name": "returnoff_no",
+        "comment": "종료사무소번호",
+        "dataType": "CHAR(3)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 68,
+          "widthComment": 86,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013684663,
+          "createAt": 1754013660018
+        }
+      },
+      "slfIKO0Ds6pFFjwngtbrA": {
+        "id": "slfIKO0Ds6pFFjwngtbrA",
+        "tableId": "ugNFPhtTpmRSnHKlZyX45",
+        "name": "t_no",
+        "comment": "차량번호",
+        "dataType": "VARCHAR2(20)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013703758,
+          "createAt": 1754013703758
+        }
+      },
+      "uBdDHnnHUcQsEhI3S8Pme": {
+        "id": "uBdDHnnHUcQsEhI3S8Pme",
+        "tableId": "oA_nVfWSK2eDHMb2Hj_sv",
+        "name": "",
+        "comment": "",
+        "dataType": "NUMBER1",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013911199,
+          "createAt": 1754013727829
+        }
+      },
+      "HPRlVrdTDEpP3RGefbBEZ": {
+        "id": "HPRlVrdTDEpP3RGefbBEZ",
+        "tableId": "ugNFPhtTpmRSnHKlZyX45",
+        "name": "cust_no",
+        "comment": "고객번호",
+        "dataType": "NUMBER1",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013812512,
+          "createAt": 1754013729453
+        }
+      },
+      "b8e0I15ceGzZHzb2CAqmZ": {
+        "id": "b8e0I15ceGzZHzb2CAqmZ",
+        "tableId": "ugNFPhtTpmRSnHKlZyX45",
+        "name": "start_hist",
+        "comment": "시작주행거리",
+        "dataType": "NUMBER",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 74,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013858294,
+          "createAt": 1754013821518
+        }
+      },
+      "TbGLUeMVQIn5buOoMKDKV": {
+        "id": "TbGLUeMVQIn5buOoMKDKV",
+        "tableId": "ugNFPhtTpmRSnHKlZyX45",
+        "name": "return_hist",
+        "comment": "종료주행거리",
+        "dataType": "NUMBER",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 74,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754013891863,
+          "createAt": 1754013864473
+        }
+      },
+      "bNfzCliNs5BvPhLY9UP41": {
+        "id": "bNfzCliNs5BvPhLY9UP41",
+        "tableId": "ugNFPhtTpmRSnHKlZyX45",
+        "name": "cust_no",
+        "comment": "고객번호",
+        "dataType": "NUMBER",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1754021407321,
+          "createAt": 1754021407320
+        }
+      }
+    },
+    "relationshipEntities": {
+      "kIlIapyXnWuleo24veFwZ": {
+        "id": "kIlIapyXnWuleo24veFwZ",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "tNB_vc3U_QSj1KpO9p9rx",
+          "columnIds": [
+            "hpFTXvOUnlSqcwWx7la_P"
+          ],
+          "x": 417,
+          "y": 48,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "ugNFPhtTpmRSnHKlZyX45",
+          "columnIds": [
+            "IFbRa0siAPVhI9pYFSTVO"
+          ],
+          "x": 583,
+          "y": 237,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1754013563452,
+          "createAt": 1754013563452
+        }
+      },
+      "3ocfoNZkEyRvnKq1GHZTo": {
+        "id": "3ocfoNZkEyRvnKq1GHZTo",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "tNB_vc3U_QSj1KpO9p9rx",
+          "columnIds": [
+            "hpFTXvOUnlSqcwWx7la_P"
+          ],
+          "x": 417,
+          "y": 112,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "ugNFPhtTpmRSnHKlZyX45",
+          "columnIds": [
+            "YPbAqb_OIU4u9PirCw7BP"
+          ],
+          "x": 583,
+          "y": 293,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1754013660019,
+          "createAt": 1754013660019
+        }
+      },
+      "jCcO8sb6MZOk0dp7LT14l": {
+        "id": "jCcO8sb6MZOk0dp7LT14l",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "tvCllNL1N9Yl05jj1ojlU",
+          "columnIds": [
+            "4E7uWkemdCLewz_SnXkMb"
+          ],
+          "x": 394,
+          "y": 233,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "ugNFPhtTpmRSnHKlZyX45",
+          "columnIds": [
+            "slfIKO0Ds6pFFjwngtbrA"
+          ],
+          "x": 583,
+          "y": 349,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1754013703759,
+          "createAt": 1754013703759
+        }
+      },
+      "dkkj0R3S5Pn8bZvfVkt25": {
+        "id": "dkkj0R3S5Pn8bZvfVkt25",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "oA_nVfWSK2eDHMb2Hj_sv",
+          "columnIds": [
+            "uBdDHnnHUcQsEhI3S8Pme"
+          ],
+          "x": 402,
+          "y": 414,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "ugNFPhtTpmRSnHKlZyX45",
+          "columnIds": [
+            "HPRlVrdTDEpP3RGefbBEZ"
+          ],
+          "x": 637,
+          "y": 374,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1754013729454,
+          "createAt": 1754013729454
+        }
+      },
+      "x4BCGh8z78Lsr_6Tnh0pV": {
+        "id": "x4BCGh8z78Lsr_6Tnh0pV",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "oA_nVfWSK2eDHMb2Hj_sv",
+          "columnIds": [
+            "RHx9zbBOQq6oqgZ5EuKp6"
+          ],
+          "x": 402,
+          "y": 390,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "ugNFPhtTpmRSnHKlZyX45",
+          "columnIds": [
+            "bNfzCliNs5BvPhLY9UP41"
+          ],
+          "x": 583,
+          "y": 405,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1754021407321,
+          "createAt": 1754021407321
+        }
+      }
+    },
+    "indexEntities": {
+      "ZMMC_bfGVwuJzmYmNiV8v": {
+        "id": "ZMMC_bfGVwuJzmYmNiV8v",
+        "name": "",
+        "tableId": "oA_nVfWSK2eDHMb2Hj_sv",
+        "indexColumnIds": [],
+        "seqIndexColumnIds": [],
+        "unique": false,
+        "meta": {
+          "updateAt": 1754013146502,
+          "createAt": 1754013146502
+        }
+      },
+      "N2BlrdJBNjTPtrM4-epw3": {
+        "id": "N2BlrdJBNjTPtrM4-epw3",
+        "name": "IDENT",
+        "tableId": "oA_nVfWSK2eDHMb2Hj_sv",
+        "indexColumnIds": [
+          "iPz0UXoasQuL8I8dNbGx1"
+        ],
+        "seqIndexColumnIds": [
+          "iPz0UXoasQuL8I8dNbGx1"
+        ],
+        "unique": false,
+        "meta": {
+          "updateAt": 1754013193014,
+          "createAt": 1754013150613
+        }
+      }
+    },
+    "indexColumnEntities": {
+      "iPz0UXoasQuL8I8dNbGx1": {
+        "id": "iPz0UXoasQuL8I8dNbGx1",
+        "indexId": "N2BlrdJBNjTPtrM4-epw3",
+        "columnId": "QvEuoRa0InhZ_84fj9K3y",
+        "orderType": 1,
+        "meta": {
+          "updateAt": 1754013193014,
+          "createAt": 1754013193014
+        }
+      }
+    },
+    "memoEntities": {}
+  }
+}
