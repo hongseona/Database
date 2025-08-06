@@ -34,7 +34,6 @@ public class TBLStudentTest {
   }
 
   private static void updateAddress(String stuno, String address) {
-
     String sql = "update tbl_student set address = ? where stuno = ?";
     try ( // try with resources : 자동 close
         Connection connection = DriverManager.getConnection(OracleConnection.URL, OracleConnection.USERNAME,
@@ -47,7 +46,6 @@ public class TBLStudentTest {
     } catch (SQLException e) {
       System.out.println("SQL 예외 : " + e.getMessage());
     } // finally 없음. 자동 close 구문
-
   }
 
   private static void insert(String stuno, String name, String age, String address) {
@@ -55,7 +53,7 @@ public class TBLStudentTest {
     PreparedStatement pstat = null;
     String sql = "insert into tbl_student(stuno,name,age,address) values (?,?,?,?)";
     try {
-      conn.setAutoCommit(false);
+      conn.setAutoCommit(false); // ✅ rollback 을 위한 설정
       // ✅ 직접 commit 을 해야 테이블에 반영. '오라클'은 commit 은 자동, rollback 은 명령어로.
       System.out.println("conn :" + conn.getAutoCommit());
       pstat = conn.prepareStatement(sql);
@@ -65,8 +63,9 @@ public class TBLStudentTest {
       pstat.setString(3, age); // setInt(3,null) 불가. 오라클에서는 문자열을 number 타입으로 자동캐스팅
       pstat.setString(4, address);
 
-      pstat.executeUpdate(); // 이 메소드는 commit 을 직접하지 않아도 close 할때 커밋을 수행합니다.
-      int test = Integer.parseInt(name); // rollback 테스트할 예외 발생
+      pstat.executeUpdate(); // 이 커넥션 방식은 commit 을 직접하지 않아도 close 할때 커밋을 수행합니다.
+      // int test = Integer.parseInt(name); // rollback 테스트할 NumberFormatException 예외
+      // 발생
 
       System.out.println("1개 행이 저장되었습니다.");
     } catch (SQLException | NumberFormatException e) {

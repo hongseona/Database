@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="tblcustomer">
+<!-- id 는 sql 을 찾는 시식별값. (개발자 정의)
+	id로 구별하는 것은 mapper 파일이 많을때 어려움이 있습니다.
+	namespace 를 설정하여 "namespace 속성값"
+	 -->
+	<select id="selectByPk" parameterType="String" resultType="CustomerVo">
+	<!-- 매개변수의 값은 타입과 이름으로 매칭 -->
+		select * from tbl_customer#
+		where customer_id=#{customerId}
+	</select>
+	<select id="selectAll" resultType="CustomerVo">
+	<!-- n개 행이지만 resultType 에 List 를 쓰지 않고 Generic Type 만 설정 -->
+		select * from tbl_customer# order by customer_id
+	</select>
+	
+	<insert id="insert" parameterType="CustomerVo">
+	<!-- 매개변수의 이름은 vo 객체의 getter 를 실행합니다. (getXXXX) XXXX 이 매개변수 이름. (3.4 이전버전)
+		그 이후는 직접 필드명으로 접근해서 가져온다. 🔥 vo 클래스에 선언된 필드(변수)명을 매개변수 이름으로 해야 합니다. -->
+		insert into tbl_customer# (customer_id,name,email,age,reg_date) 
+                    values (#{customId}, #{name}, #{email}, #{age}, sysdate)
+	</insert>
+	<update id="update" parameterType="CustomerVo">
+		update tbl_customer#
+		set email = #{email}, age = #{age} 
+		where customr_id = #{customerId}
+	</update>
+	<delete id="delete" parameterType="String">
+		delete from tbl_customer#
+			where custom_id = #{customId}
+	</delete>
+</mapper>  
+<!-- 
+${}  : jsp에서 getAttribute 역할
+       문자열 기호 ' ' 가 자동으로 생기지 않습니다.
+#{}  : 매퍼 XML 에서 파라미터 기호
+       문자열 기호 ' ' 가 자동으로 생깁니다.
+ -->
+
+
+
