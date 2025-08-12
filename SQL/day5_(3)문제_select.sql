@@ -25,7 +25,15 @@ from TBL_BUY
 where pcode='JINRMn5';
 
 -- 문제 추가 : (1) pcode 별로 수량합계가 (2)가장 높은 순서대로 rank 구하기
+SELECT pcode, sum(quantity)
+from TBL_BUY
+GROUP BY pcode;
 
+SELECT pcode,
+sum(quantity) as "sum",
+rank() over (order by sum(quantity) desc) as "rank"
+from TBL_BUY
+GROUP BY pcode;
 
 
 --6.  customer_id 'mina012' 이 구매한 내용 조회
